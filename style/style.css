@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
 
+    width: 1280px;
+}
 
 header {
 
@@ -12,17 +15,20 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    background-color: black;
+    background-color: #2B2A2B;
     padding: 12px 40px;
     font-family: 'outfit';
 
 }
-
+ .cup,.phone {
+    display: flex;
+    align-items: center;
+}
 .navegacion a {
     text-decoration: none;
     color: white;
     font-size: 14px;
-    gap: 32px;
+    margin: 0 1rem;
 }
 
 h1 {
@@ -31,10 +37,15 @@ h1 {
     line-height: 35px;
     font-family: "Outfit";
     font-style: normal;
-   
 }
 
-.phone a {
+.cup div {
+    margin-left: 10px;
+}
+.phone *{
+    margin: 1rem;
+}
+.phone p {
     text-decoration: none;
     color: white;
 }
@@ -45,16 +56,65 @@ h1 {
     color: white;
     font-family: "outfit";
     border-radius: 4px;
-    gap: 24px;
+   border: none;
+
 }
 
-.cup {
-   
-     width: 20.29px;
-     height: 24.95px;
+section {
 
+    background: rgba(227, 222, 215, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "outfit";
+    font-style: normal;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding: 48px 40px;
+    
+}
+
+
+h2 { 
+ 
+    color: #2A5B45;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h3 {  
+
+    font-size: 40px;
+    line-height: 44px;
+    color: #000000;
    
 
 }
+
+section p {
+
+    font-size: 14px;
+    color: #111827;
+    line-height: 16px;
+   
+}
+
+ .imgcoffe {
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    padding: 48px 40px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
