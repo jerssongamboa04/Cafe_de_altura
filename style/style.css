@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "outfit";
 }
 
 body {
@@ -17,13 +18,16 @@ header {
     justify-content: space-between;
     background-color: #2B2A2B;
     padding: 12px 40px;
-    font-family: 'outfit';
+
 
 }
- .cup,.phone {
+
+.cup,
+.phone {
     display: flex;
     align-items: center;
 }
+
 .navegacion a {
     text-decoration: none;
     color: white;
@@ -35,16 +39,17 @@ h1 {
     color: white;
     font-size: 23.4628px;
     line-height: 35px;
-    font-family: "Outfit";
     font-style: normal;
 }
 
 .cup div {
     margin-left: 10px;
 }
-.phone *{
+
+.phone * {
     margin: 1rem;
 }
+
 .phone p {
     text-decoration: none;
     color: white;
@@ -56,65 +61,138 @@ h1 {
     color: white;
     font-family: "outfit";
     border-radius: 4px;
-   border: none;
+    border: none;
 
 }
 
-section {
-
+.sectionone {
     background: rgba(227, 222, 215, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "outfit";
     font-style: normal;
     display: flex;
-    align-items: flex-start;
     padding: 48px 40px;
-    
+    text-shadow: 2px 2px 4px #494444;
+    gap: 8px;
 }
 
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-h2 { 
- 
+h2 {
+
     color: #2A5B45;
     font-size: 18px;
-    line-height: 24px;
 }
 
-h3 {  
+.home {
 
     font-size: 40px;
-    line-height: 44px;
     color: #000000;
-   
+    margin: 16px 0px 18px 0px;
+
 
 }
 
 section p {
-
+    margin: 1rem 0;
     font-size: 14px;
     color: #111827;
-    line-height: 16px;
-   
+
 }
 
- .imgcoffe {
+.imgcoffe {
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 20px;
-    padding: 48px 40px;
-    
 
 }
 
+.source {
+
+    font-size: 14px;
+    background: #1F1815;
+    color: #FFFFFF;
+    align-items: flex-start;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px 24px;
+    border: none;
+
+}
+
+.purchase {
+    font-size: 14px;
+    color: #FFFFFF;
+    flex-direction: row;
+    border-radius: 4px;
+    background: #2A5B45;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: flex-start;
+    padding: 12px 24px;
+    border: none;
+}
+
+/******jersssssson ***/
+
+
+.sectiontwo {
+    background-image: url(../asset/cafeDeFondo.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sectiontwo h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 30px 0;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .order {
+    
+    flex-direction: column;
 
 
 
+}
 
+.order {
+    background-color: #F7F5F3;
+    justify-content: center;
+    align-items: center;
+    width: 316px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
+    margin: 24px;
+}
 
+.order p {
+    font-size: 14px;
+    padding: 0 24px;
 
+    color: #111827;
 
+}
 
+.order h3 {
+    font-size: 18px;
+    color: #2B2A2B;
 
+}
 
+.order img {
 
-
+    margin: 20px 0;
+}
