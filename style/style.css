@@ -6,7 +6,7 @@
 }
 
 body {
-     margin: auto;
+    margin: auto;
     width: 1280px;
 }
 
@@ -200,7 +200,7 @@ section p {
     margin: 20px 0;
 }
 
-/*************Section Three***********/
+/*************Section three***********/
 
 .sectionthree {
 
@@ -252,8 +252,8 @@ section p {
 
 }
 
-.Costarica:hover .Añadir{
-    
+.Costarica:hover .Añadir {
+
     background: #2A5B45;
 }
 
@@ -302,4 +302,54 @@ section p {
     font-weight: 400;
     font-size: 14px;
     margin: 12px 0 24px 0;
+}
+
+/*************Section four***********/
+
+.cuestion {
+    background-color: #2A5B45;
+    color: #2B2A2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.cuestion h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 41px 0;
+
+}
+
+
+.selection {
+    display: flex;
+    width: 668px;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: left;
+    margin: 16px 0;
+    padding: 24px;
+    
+
+}
+
+.selection p {
+    font-size: 12px;
+    border-top: 1px solid #E3DED7;
+    padding: 24px;
+}
+
+.doubt {
+    margin: 41px 0;
+}
+
+.doubt a {
+    color: white;
+    font-size: 14px;
+    margin: 0 19px;
 }
