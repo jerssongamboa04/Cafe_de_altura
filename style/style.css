@@ -6,7 +6,7 @@
 }
 
 body {
-
+     margin: auto;
     width: 1280px;
 }
 
@@ -46,17 +46,18 @@ h1 {
     margin-left: 10px;
 }
 
-.phone * {
-    margin: 1rem;
+.phone img {
+    margin: 5px;
 }
 
 .phone p {
     text-decoration: none;
+    margin: 0 24px 0 6px;
     color: white;
 }
 
 .phone .sesion {
-    padding: 12px 24px;
+    padding: 12px 26px;
     background-color: #515051;
     color: white;
     font-family: "outfit";
@@ -70,7 +71,7 @@ h1 {
     font-style: normal;
     display: flex;
     padding: 48px 40px;
-    text-shadow: 2px 2px 4px #494444;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     gap: 8px;
 }
 
@@ -78,10 +79,10 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 24px;
 }
 
-h2 {
-
+.mainContent h2 {
     color: #2A5B45;
     font-size: 18px;
 }
@@ -118,6 +119,7 @@ section p {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 12px 24px;
+    margin: 16px;
     border: none;
 
 }
@@ -134,10 +136,11 @@ section p {
     border: none;
 }
 
-/******jersssssson ***/
+/******SectionTwo******/
 
 
 .sectiontwo {
+
     background-image: url(../asset/cafeDeFondo.jpeg);
     background-position: center;
     background-size: cover;
@@ -160,7 +163,7 @@ section p {
 }
 
 .container .order {
-    
+
     flex-direction: column;
 
 
@@ -195,4 +198,108 @@ section p {
 .order img {
 
     margin: 20px 0;
+}
+
+/*************Section Three***********/
+
+.sectionthree {
+
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.containertwo {
+
+    display: flex;
+
+}
+
+
+
+.sectionthree h2 {
+
+    font-size: 24px;
+    text-align: center;
+    color: #2A5B45;
+    margin: 24px 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Costarica {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 282px;
+    border-radius: 8px;
+    border: 1px solid #E3DED7;
+    margin: 16px;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.Costarica:hover .Laos {
+    background-color: #E3DED7;
+
+}
+
+.Costarica:hover {
+    background-color: #E3DED7;
+
+}
+
+.Costarica:hover .Añadir{
+    
+    background: #2A5B45;
+}
+
+.Añadir {
+    width: 60px;
+    display: flex;
+    background: rgba(42, 91, 69, 0.7);
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+    border: none;
+}
+
+
+
+.see a {
+
+    text-decoration-line: underline;
+    font-size: 14px;
+    font-family: "outfit";
+    color: #000000;
+    padding: 12px;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.see {
+    margin: 20px;
+}
+
+.Laos {
+
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+.Costarica img {
+
+    margin: 24px 31.3px;
+}
+
+.Costarica p {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 12px 0 24px 0;
 }
