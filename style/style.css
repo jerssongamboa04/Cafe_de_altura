@@ -10,16 +10,14 @@ body {
     width: 1280px;
 }
 
+/*******************Header************************/
 header {
-
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     background-color: #2B2A2B;
     padding: 12px 40px;
-
-
 }
 
 .cup,
@@ -63,16 +61,16 @@ h1 {
     font-family: "outfit";
     border-radius: 4px;
     border: none;
-
 }
+
+/********************SectionOne******************/
 
 .sectionone {
     background: rgba(227, 222, 215, 0.3);
     font-style: normal;
     display: flex;
-    padding: 48px 40px;
+    padding: 46px 35px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    gap: 8px;
 }
 
 .mainContent {
@@ -85,47 +83,43 @@ h1 {
 .mainContent h2 {
     color: #2A5B45;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .home {
-
     font-size: 40px;
     color: #000000;
-    margin: 16px 0px 18px 0px;
-
-
+    margin: 16px 0 0 0;
 }
 
 section p {
     margin: 1rem 0;
     font-size: 14px;
     color: #111827;
-
+    font-weight: 400px;
 }
 
 .imgcoffe {
-
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 20px;
-
 }
 
 .source {
-
     font-size: 14px;
+    font-weight: 600;
     background: #1F1815;
     color: #FFFFFF;
     align-items: flex-start;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 12px 24px;
-    margin: 16px;
+    margin: 0 16px 0 0;
     border: none;
-
 }
 
 .purchase {
     font-size: 14px;
+    font-weight: 600;
     color: #FFFFFF;
     flex-direction: row;
     border-radius: 4px;
@@ -136,25 +130,21 @@ section p {
     border: none;
 }
 
-/******SectionTwo******/
-
+/***************SectionTwo*************************/
 
 .sectiontwo {
-
     background-image: url(../asset/cafeDeFondo.jpeg);
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
-
 }
 
 .sectiontwo h2 {
     font-size: 24px;
     text-align: center;
     color: #FFFFFF;
-    margin: 30px 0;
-
+    margin: 48px 0 12px 0;
 }
 
 .container {
@@ -163,11 +153,7 @@ section p {
 }
 
 .container .order {
-
     flex-direction: column;
-
-
-
 }
 
 .order {
@@ -178,7 +164,7 @@ section p {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
-    margin: 24px;
+    margin: 12px 12px 48px 12px;
 }
 
 .order p {
@@ -186,42 +172,31 @@ section p {
     padding: 0 24px;
 
     color: #111827;
-
 }
 
 .order h3 {
     font-size: 18px;
     color: #2B2A2B;
-
 }
 
 .order img {
-
     margin: 20px 0;
 }
 
-/*************Section three***********/
+/**********************Section three***************/
 
 .sectionthree {
-
     display: flex;
     background-color: #FFFFFF;
     flex-direction: column;
     text-align: center;
-
-
 }
 
 .containertwo {
-
     display: flex;
-
 }
 
-
-
 .sectionthree h2 {
-
     font-size: 24px;
     text-align: center;
     color: #2A5B45;
@@ -230,7 +205,6 @@ section p {
 }
 
 .Costarica {
-
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -244,16 +218,13 @@ section p {
 
 .Costarica:hover .Laos {
     background-color: #E3DED7;
-
 }
 
 .Costarica:hover {
     background-color: #E3DED7;
-
 }
 
 .Costarica:hover .Añadir {
-
     background: #2A5B45;
 }
 
@@ -267,10 +238,7 @@ section p {
     border: none;
 }
 
-
-
 .see a {
-
     text-decoration-line: underline;
     font-size: 14px;
     font-family: "outfit";
@@ -285,16 +253,13 @@ section p {
 }
 
 .Laos {
-
     background-color: white;
     border: none;
     font-weight: 600;
     font-size: 14px;
-
 }
 
 .Costarica img {
-
     margin: 24px 31.3px;
 }
 
@@ -304,7 +269,7 @@ section p {
     margin: 12px 0 24px 0;
 }
 
-/*************Section four***********/
+/*************************Section four*****************/
 
 .cuestion {
     background-color: #2A5B45;
@@ -313,35 +278,42 @@ section p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-
 }
 
 .cuestion h2 {
     color: #FFFFFF;
     font-size: 24px;
     margin: 41px 0;
-
 }
 
 
 .selection {
-    display: flex;
     width: 668px;
-    justify-content: space-around;
     background: #FFFFFF;
     border-radius: 10px;
     text-align: left;
     margin: 16px 0;
     padding: 24px;
-    
+}
 
+.selection img {
+    align-content: space-between;
 }
 
 .selection p {
     font-size: 12px;
     border-top: 1px solid #E3DED7;
     padding: 24px;
+}
+
+.emotion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.emotion img {
+    Width: 10px;
+    Height: 6px;
 }
 
 .doubt {
@@ -352,4 +324,29 @@ section p {
     color: white;
     font-size: 14px;
     margin: 0 19px;
+}
+
+
+
+/*************************Section five*****************/
+
+.sectionfive {
+    display: flex;
+    background: rgba(227, 222, 215, 0.3);
+    font-style: normal;
+    padding: 48px 40px;
+    gap: 8px;
+}
+
+.sectionfive h2 {
+    font-size: 24px;
+    color: #2A5B45;
+}
+
+.how a {
+    text-decoration-line: underline;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    margin: 16px 19px 0 0;
 }
