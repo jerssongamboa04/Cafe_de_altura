@@ -206,6 +206,7 @@ section p {
 
 .Costarica {
     display: flex;
+    text-align: center;
     align-items: center;
     flex-direction: column;
     width: 282px;
@@ -285,6 +286,10 @@ section p {
     font-size: 24px;
     margin: 41px 0;
 }
+.selection h3{
+
+    padding: 12px 0;
+}
 
 
 .selection {
@@ -293,13 +298,14 @@ section p {
     border-radius: 10px;
     text-align: left;
     margin: 16px 0;
-    padding: 24px;
+    padding: 20px;
 }
 
 .selection p {
     font-size: 12px;
-    border-top: 1px solid #E3DED7;
+    border-top: 1px solid grey;
     margin: auto 0;
+    padding: 16px 0 0 0;
 }
 
 .emotion {
@@ -348,3 +354,79 @@ section p {
     color: #000000;
     margin: 16px 19px 0 0;
 }
+/*************************Section six*****************/
+
+.sectionsix{
+    width: 1280px;
+    height: 552px;
+    display: flex;
+    align-content:center ;
+    color: #6B7280;
+    font-size: 14px;
+
+}
+
+.evergreen{
+    background: #E3DED7;
+    width: 50%;
+    padding: 0 0 0 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 32px 32px 48px;
+    color: #6B7280; 
+}
+
+.evergreen p{
+    color: #6B7280;
+}
+
+.evergreen h3 {
+    font-size: 18px;
+}
+
+.support p {
+    color: #6B7280;
+    margin: 12px 0;
+}
+
+.support {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.terrace p {
+   margin: auto 0;
+}
+
+.support a {
+    color: black;
+}
+
+.support img {
+    margin: 0 15px 0 0;
+}
+
+/*************************Formulario*****************/
+
+
+form {
+
+    background: white;
+    width: 50%;
+    display: flex;
+    align-content:center ;
+    padding: 32px 32px 32px 48px;
+
+}
+
+.us {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;0
+
+}
+
+
