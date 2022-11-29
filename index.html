@@ -235,28 +235,32 @@
         <form>
 
             <div class="us">
-                <label for="name">Nombre:</label>
+                <label for="name">Nombre completo</label>
+                <input type="name" id="name" name="name">
 
-                <label for="email">Correo Electronico:</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email">
 
                 <div class="apple">
-                    <label for="pais">Pais</label>
-                    <select name="pais" id="pais">
-                        <option value="España">US</option>
-
-                        <label for="text">Telefono:</label>
-                        <input type="text" id="number" name="number">
+                    <select name="phone" id="pais">
+                        <option value="US">US</option>
+                        <input type="number" name="" placeholder="+1 (555) 987-6543">
                 </div>
 
-                <label for="extra">¿En qué podemos ayudarte?</label>
-                <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
 
-                <input type="checkbox" name="terminos" id="terminos" value="terminos">
-                <label for="terminos">Acepto la Política de Privacidad y los Términos y condiciones.</label>
+                <textarea name="mensaje" id="mensaje" rows="10" cols="50"placeholder="¿En que podemos ayudarte?"></textarea>
+
+                <div class="mouse">
+                    <input type="checkbox" name="terminos" id="terminos" value="terminos">
+                    <label for="terminos">Acepto la <a href="">Política de Privacidad</a> y los <a href="">Términos y
+                            condiciones.</a></label>
+                </div>
+
+
+                <button class="kia">Enviar</button>
+
             </div>
 
-            <input type="submit" value="Enviar">
 
         </form>
 
