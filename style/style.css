@@ -286,7 +286,8 @@ section p {
     font-size: 24px;
     margin: 41px 0;
 }
-.selection h3{
+
+.selection h3 {
 
     padding: 12px 0;
 }
@@ -354,32 +355,33 @@ section p {
     color: #000000;
     margin: 16px 19px 0 0;
 }
+
 /*************************Section six*****************/
 
-.sectionsix{
+.sectionsix {
     width: 1280px;
     height: 552px;
     background-color: #E3DED7;
     display: flex;
-    align-content:center ;
+    align-content: center;
     color: #6B7280;
     font-size: 14px;
     margin: 0 40px 0 0;
 
 }
 
-.evergreen{
+.evergreen {
     background: #E3DED7;
     width: 50%;
-    padding: 0 0 0 40px; 
+    padding: 0 0 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 32px 32px 32px 48px;
-    color: #6B7280; 
+    color: #6B7280;
 }
 
-.evergreen p{
+.evergreen p {
     color: #6B7280;
 }
 
@@ -399,7 +401,7 @@ section p {
 }
 
 .terrace p {
-   margin: auto 0;
+    margin: auto 0;
 }
 
 .support a {
@@ -407,7 +409,7 @@ section p {
 }
 
 .support img {
-    margin: 0 15px 0 0;
+    margin: 0 16px 0 0;
 }
 
 /*************************Formulario*****************/
@@ -417,7 +419,7 @@ form {
     background: white;
     width: 50%;
     display: flex;
-    align-content:center ;
+    align-content: center;
     flex-direction: column;
     padding: 32px 32px 32px 48px;
     margin: 0 40px 0 0;
@@ -434,7 +436,6 @@ form {
 #name {
     font-size: 12px;
     padding: 8px;
-
     border-radius: 6px;
     border: solid 1px rgba(209, 213, 219, 1);
 }
@@ -446,23 +447,18 @@ form {
 }
 
 #pais {
-
     padding: 8px;
     border-radius: 6px;
     border: solid 1px rgba(209, 213, 219, 1);
 }
 
 .apple input {
- 
     padding: 8px;
     border-radius: 6px;
     border: solid 1px rgba(209, 213, 219, 1);
 }
 
-
-
 #mensaje {
-
     padding: 8px;
     border-radius: 6px;
     border: solid 1px rgba(209, 213, 219, 1);
@@ -472,23 +468,26 @@ form {
     display: flex;
     line-height: normal;
     padding: 8px;
-    
 }
 
 .mouse input {
     display: inline-block;
 }
 
-.us input{
+.us input {
     margin: 0 12px 0 0;
 }
 
 .kia {
-    
     width: 90px;
     background: rgba(42, 91, 69, 0.7);
     border-radius: 4px;
     color: white;
     padding: 12px 24px;
     border: none;
+}
+
+.mouse a {
+    color: #000000;
+    font-weight: 600;
 }
