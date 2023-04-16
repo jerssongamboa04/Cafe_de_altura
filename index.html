@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe de Altura</title>
-    <link rel="stylesheet" href="../cafe_de_altura/style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
@@ -16,29 +16,34 @@
     <!----------------------------------Header--------------------------------->
     <header>
         <div class="cup">
-            <h1>cafedealtura.com</h1>
-            <div>
-                <img src="./asset/cup.png" alt="cup">
-            </div>
+            <a class="cup" href="index.html">
+                <h1>cafedealtura.com</h1>
+                <div>
+                    <img src="/asset/cup.png" alt="cup">
+                </div>
+            </a>
         </div>
 
         <nav class="navegacion">
-            <a href="">Tienda</a>
+            <a href="pages/tienda.html">Tienda</a>
             <a href="">Suscripcion</a>
             <a href="">Para empresas</a>
             <a href="">Sobre nosotros</a>
-            <a href="">Contacto</a>
+            <a href="#sectionsix">Contacto</a>
         </nav>
 
         <div class="phone">
-            <img src="../cafe_de_altura/asset/phone.png" alt="phone">
+            <img src="/asset/phone.png" alt="phone">
             <p>+34 919 49 05 18</p>
             <button class="sesion">Iniciar sesión</button>
         </div>
 
-        <div>
-            <a href="">
-                <img src="../cafe_de_altura/asset/bag.png" alt="logo">
+        <div class="contenedor-icon">
+            <a href="/pages/cesta.html">
+                <img src="/asset/bag.png" alt="logo">
+                <div class="iconCarrito">
+                    <p class="iconCarrito2">0</p>
+                </div>
             </a>
         </div>
     </header>
@@ -58,12 +63,11 @@
             <div>
                 <button class="source">Descubrir orígenes</button>
                 <button class="purchase">Comprar café</button>
-
             </div>
 
         </div>
 
-        <img class="imgcoffe" src="../cafe_de_altura/asset/bar.jpg" alt="coffe">
+        <img class="imgcoffe" src="/asset/Hero image.jpg" alt="coffe">
     </section>
 
     <!--------------------------------Section two--------------------------------->
@@ -74,7 +78,7 @@
 
         <div class="container">
             <div class="order">
-                <img src="../cafe_de_altura/asset/order.png" alt="order">
+                <img src="/asset/order.png" alt="order">
                 <h3>Recibe tu pedido sin preocuparte</h3>
                 <p>Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de café, nunca te quedarás
                     sin
@@ -82,13 +86,13 @@
             </div>
 
             <div class="order">
-                <img src="../cafe_de_altura/asset/Truck.png" alt="truck">
+                <img src="/asset/Truck.png" alt="truck">
                 <h3>Envío en 24/48h</h3>
                 <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
             </div>
 
             <div class="order">
-                <img src="../cafe_de_altura/asset/gift.png" alt="gift">
+                <img src="/asset/gift.png" alt="gift">
                 <h3>Descuentos y beneficios</h3>
                 <p>Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a
                     nosotros.</p>
@@ -106,28 +110,32 @@
         <div class="containertwo">
 
             <div class="Costarica">
-                <img src="../cafe_de_altura/asset/Costarica.png">
+                <span>1</span>
+                <img src="/asset/Costarica.png">
                 <button class="Laos">Costa Rica Tarrazú</button>
                 <p>9,00 €</p>
                 <button class="Añadir">Añadir</button>
             </div>
 
             <div class="Costarica">
-                <img src="../cafe_de_altura/asset/colombia.png">
+                <span>2</span>
+                <img src="/asset/colombia.png">
                 <button class="Laos">Colombia Los Naranjos</button>
                 <p>9,00 €</p>
                 <button class="Añadir">Añadir</button>
             </div>
 
             <div class="Costarica">
-                <img src="../cafe_de_altura/asset/laos.png">
+                <span>3</span>
+                <img src="/asset/laos.png">
                 <button class="Laos">Laos Amanecer</button>
                 <p>9,00 €</p>
                 <button class="Añadir">Añadir</button>
             </div>
 
             <div class="Costarica">
-                <img src="../cafe_de_altura/asset/etiopia.png">
+                <span>4</span>
+                <img src="/asset/etiopia.png">
                 <button class="Laos">Etiopía Yrgacheff</button>
                 <p>9,00 €</p>
                 <button class="Añadir">Añadir</button>
@@ -135,8 +143,8 @@
         </div>
 
         <div class="see">
-            <a href="">Ver todos</a>
-            <img src="../cafe_de_altura/asset/direccion.png">
+            <a href="/pages/tienda.html">Ver todos</a>
+            <img class="seeImg" src="/asset/direccion.png">
         </div>
     </section>
     <!--------------------------------Section four--------------------------------->
@@ -149,18 +157,18 @@
             <div class="selection">
                 <div class="emotion">
                     <h3>¿Cómo hago el pedido?</h3>
-                    <img src="../cafe_de_altura/asset/Icon (2).png" alt="icon">
+                    <img class="iconAbove" src="/asset/Icon (3).png" alt="icon">
                 </div>
-                <p>Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te
+                <p class="pFaq">Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres,
+                    te
                     preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin
                     café.</p>
             </div>
 
             <div class="selection">
-
                 <div class="emotion">
                     <h3>¿Por qué los precios son tan bajos?</h3>
-                    <img src="../cafe_de_altura/asset/Icon (2).png" alt="icon">
+                    <img class="iconAbove" src="/asset/Icon (3).png" alt="icon">
                 </div>
                 <p>Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes.
                     Si podemos ofrecerte estos precios es porque tratamos directamente con los productores de café,
@@ -171,13 +179,14 @@
             <div class="selection">
                 <div class="emotion">
                     <h3>¿Es posible enviar café a mi oficina?</h3>
-                    <img src="../cafe_de_altura/asset/Icon (3).png" alt="icon">
+                    <img class="iconAbove" src="/asset/Icon (3).png" alt="icon">
                 </div>
+                <p>Team JS - CAO </p>
             </div>
 
             <div class="doubt">
-                <a href="">Resolvemos tus dudas</a>
-                <img src="../cafe_de_altura/asset/arrow.png">
+                <a href="#sectionsix">Resolvemos tus dudas</a>
+                <img src="/asset/arrow.png">
             </div>
         </div>
     </section>
@@ -193,16 +202,16 @@
             <div>
                 <div class="how">
                     <a href="">Cómo llegar</a>
-                    <img src="../cafe_de_altura/asset/direccion.png">
+                    <img src="/asset/direccion.png">
                 </div>
             </div>
         </div>
-        <img class="imgcoffe" src="../cafe_de_altura/asset/Hero image.jpg" alt="photo">
+        <img class="imgcoffe" src="asset/bar.jpg" alt="photo">
     </section>
 
     <!--------------------------------section six---------------------------------------->
 
-    <section class="sectionsix">
+    <section id="sectionsix" class="sectionsix">
 
         <div class="evergreen">
             <h3>Entra en contacto con nosotros</h3>
@@ -217,12 +226,12 @@
 
             </div>
             <div class="support">
-                <img src="../cafe_de_altura/asset/phoneblanco.png" alt="icon">
+                <img src="/asset/phoneblanco.png" alt="icon">
                 <p>+1 (555) 123-4567</p>
             </div>
 
-            <div class="support">
-                <img src="../cafe_de_altura/asset/Mail.png" alt="icon">
+            <div class="support-email">
+                <img src="/asset/Mail.png" alt="icon">
                 <p>support@example.com</p>
             </div>
 
@@ -232,28 +241,36 @@
             </div>
         </div>
         <!--------------------------------section seven Formularios---------------------------------------->
-        <form>
-
+        <form id="formulario">
             <div class="us">
-                <label for="name">Nombre completo</label>
-                <input type="name" id="name" name="name">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-
-                <div class="apple">
-                    <select name="phone" id="pais">
-                        <option value="US">US</option>
-                        <input type="number" name="" placeholder="+1 (555) 987-6543">
+                <div class="form-galping">
+                    <label for="name2">Nombre completo</label>
+                    <input type="name" id="name2" name="name2" class="focus-input" required>
                 </div>
 
+                <div class="form-galping">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="focus-input" required>
+                </div>
 
-                <textarea name="mensaje" id="mensaje" rows="10" cols="50"
-                    placeholder="¿En que podemos ayudarte?"></textarea>
+                <div class="form-galping">
+                    <label for="phone_number">Telefono:</label>
+                    <div class="apple">
+                        <select name="phone" id="pais">
+                            <option value="US">US</option>
+                        </select>
+                        <input type="tel" name="phone_number" id="phone_number" placeholder="+1 (555) 987-6543"
+                            required>
+                    </div>
+                </div>
+
+                <input name="mensaje" id="mensaje" rows="10" cols="50" placeholder="¿En que podemos ayudarte?"></input>
 
                 <div class="mouse">
                     <input type="checkbox" name="terminos" id="terminos" value="terminos">
-                    <label for="terminos">Acepto la <a href="">Política de Privacidad</a> y los <a href="">Términos y
+                    <label for="terminos">Acepto la <a href="">Política de Privacidad</a> y los <a href="">Términos
+                            y
                             condiciones.</a></label>
                 </div>
                 <button class="kia">Enviar</button>
@@ -261,6 +278,52 @@
         </form>
 
     </section>
+    <!--------------------------------section eight Footer---------------------------------------->
+    <footer>
+        <div class="madre">
+            <div class="cup-footer">
+                <img src="asset/logo footer.png" alt="cup">
+            </div>
+            <div class="padre">
+
+                <div class="wrapper">
+                    <h3>Te ayudamos en</h3>
+                    <button class="footer-phone">
+                        <img src="/asset/phone.png" alt="phone">
+                        <h4>+34 919 49 05 18</h4>
+                    </button>
+
+                    <button class="footer-email">
+                        <img src="/asset/emailfooter.png" alt="icon">
+                        <h4>hola@cafedealtura.com</h4>
+                    </button>
+                </div>
+                <div class="menu-wrapper">
+                    <button>Tienda</button>
+                    <button>Suscripción</button>
+                    <button>Para empresas</button>
+                    <button>Sobre nosotros</button>
+                    <button>Contacto</button>
+                </div>
+
+                <div class="menu-terminos">
+                    <button>Política de privacidad</button>
+                    <button>Política de cookies</button>
+                    <button>Términos y condiciones</button>
+                </div>
+
+            </div>
+
+            <div class="union">
+                <h4>Todos los derechos reservados - Café de Altura SL - 2022</h4>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+    <script src="/pages/tienda.js" ></script>
 
 </body>
 

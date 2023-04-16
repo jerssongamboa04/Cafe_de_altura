@@ -6,6 +6,7 @@
 }
 
 body {
+
     margin: auto;
     width: 1280px;
 }
@@ -24,6 +25,9 @@ header {
 .phone {
     display: flex;
     align-items: center;
+    text-decoration: none;
+
+
 }
 
 .navegacion a {
@@ -190,10 +194,16 @@ section p {
     background-color: #FFFFFF;
     flex-direction: column;
     text-align: center;
+    flex-wrap: nowrap;
+
 }
 
 .containertwo {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
 }
 
 .sectionthree h2 {
@@ -288,10 +298,8 @@ section p {
 }
 
 .selection h3 {
-
     padding: 12px 0;
 }
-
 
 .selection {
     width: 668px;
@@ -303,6 +311,7 @@ section p {
 }
 
 .selection p {
+    display: none;
     font-size: 12px;
     border-top: 1px solid grey;
     margin: auto 0;
@@ -331,10 +340,7 @@ section p {
     margin: 0 19px;
 }
 
-
-
 /*************************Section five*****************/
-
 .sectionfive {
     display: flex;
     background: rgba(227, 222, 215, 0.3);
@@ -367,7 +373,6 @@ section p {
     color: #6B7280;
     font-size: 14px;
     margin: 0 40px 0 0;
-
 }
 
 .evergreen {
@@ -387,17 +392,25 @@ section p {
 
 .evergreen h3 {
     font-size: 18px;
+    font-weight: 600;
+    color: rgba(17, 24, 39, 1);
 }
 
 .support p {
     color: #6B7280;
-    margin: 12px 0;
+    margin: 0px;
 }
 
 .support {
+    height: 24px;
     display: flex;
     align-items: center;
     gap: 8px;
+
+}
+
+.terrace {
+    padding-bottom: 16px;
 }
 
 .terrace p {
@@ -406,15 +419,25 @@ section p {
 
 .support a {
     color: black;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.support-email {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0px 32px 0px;
 }
 
 .support img {
-    margin: 0 16px 0 0;
+    margin: 0px;
 }
 
 /*************************Formulario*****************/
-
-
 form {
     background: white;
     width: 50%;
@@ -425,43 +448,83 @@ form {
     margin: 0 40px 0 0;
 }
 
+form label {
+    font-size: 12px;
+    color: #374151;
+}
+
 .us {
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 8px;
-    gap: 16px;
+    gap: 22px;
 }
 
-#name {
+.form-galping {
+    height: 43px;
+    gap: 4px;
+
+}
+
+.form-galping input {
+    border: 1px solid #ccc;
+    /* outline: none; */
+
+}
+
+#name2 {
+    height: 34px;
+    width: 100%;
+    /* border: 1px solid #D1D5DB; */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     font-size: 12px;
+    margin-top: 4px;
     padding: 8px;
     border-radius: 6px;
-    border: solid 1px rgba(209, 213, 219, 1);
 }
 
+
 #email {
+    width: 100%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     padding: 8px;
+    margin-top: 4px;
     border-radius: 6px;
     border: solid 1px rgba(209, 213, 219, 1);
 }
 
 #pais {
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 0px;
+    border: white;
+}
+
+
+.apple {
+    margin-top: 4px;
+
     padding: 8px;
     border-radius: 6px;
     border: solid 1px rgba(209, 213, 219, 1);
 }
 
 .apple input {
-    padding: 8px;
-    border-radius: 6px;
-    border: solid 1px rgba(209, 213, 219, 1);
+    padding-left: 8px;
+    border: #FFFFFF;
 }
 
 #mensaje {
-    padding: 8px;
+    outline: none;
+    margin-top: 20px;
+    height: 142px;
+    padding: 13px;
     border-radius: 6px;
-    border: solid 1px rgba(209, 213, 219, 1);
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .mouse {
@@ -476,6 +539,7 @@ form {
 
 .us input {
     margin: 0 12px 0 0;
+
 }
 
 .kia {
@@ -490,4 +554,505 @@ form {
 .mouse a {
     color: #000000;
     font-weight: 600;
+}
+
+input::placeholder {
+    text-indent: 5px;
+    transform: translateY(-50px);
+}
+
+
+/*************************Footer*****************/
+footer {
+    background-color: #1F1815;
+    height: 280px;
+}
+
+.cup-footer {
+    padding-top: 28px;
+    padding-left: 40px;
+}
+
+.padre {
+    padding: 8px 40px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    width: 255.33px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.wrapper h3 {
+    color: #FFFFFF;
+    font-weight: 100;
+
+}
+
+.footer-phone {
+    width: 182px;
+    height: 48px;
+    background: #515051;
+    border-radius: 4px;
+    display: flex;
+    padding: 12px 24px;
+    gap: 8px;
+    border: none;
+}
+
+.footer-email {
+    width: 232px;
+    height: 48px;
+    background: #515051;
+    border-radius: 4px;
+    padding: 12px 24px;
+    gap: 8px;
+    display: flex;
+    border: none;
+}
+
+.footer-phone h4 {
+    color: white;
+    font-family: 'Outfit';
+    letter-spacing: 0, 9px;
+    font-weight: 100;
+}
+
+.footer-email h4 {
+    color: white;
+    font-family: 'Outfit';
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 255.33px;
+    height: 80px;
+    left: 800px;
+    top: 3px;
+}
+
+.menu-wrapper button {
+    background-color: #1F1815;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.menu-terminos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 255.33px;
+    height: 80px;
+    left: 800px;
+    top: 3px;
+}
+
+.menu-terminos button {
+    background-color: #1F1815;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.union {
+    text-align: center;
+    height: 40px;
+    background: #2B2A2B;
+    color: rgba(255, 255, 255, 1);
+}
+
+.union h4 {
+    padding: 12px;
+    letter-spacing: 1px;
+
+    font-weight: 100;
+}
+
+/************************* Tienda *****************/
+
+.tienda-origenes {
+
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.CostaricaA {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 282px;
+    border-radius: 8px;
+    border: 1px solid #E3DED7;
+    margin: 16px;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.CostaricaA img {
+    margin: 24px 31.3px;
+    opacity: 0.5;
+
+}
+
+.CostaricaA p {
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 12px 0 24px 0;
+}
+
+.AñadirA {
+    width: 72px;
+    display: flex;
+    background: rgba(227, 222, 215, 1);
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+    border: none;
+}
+
+.LaosA {
+    opacity: 0.5;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/************************* Cesta *****************/
+
+.cesta {
+
+    text-align: center;
+    width: 1280px;
+    height: 876px;
+
+}
+
+#title-cesta {
+
+    margin: 40px 0px 24px 0px;
+    font-family: 'Outfit';
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 24px;
+    line-height: 28px;
+    color: #2A5B45;
+}
+
+.contenedor-icon a {
+    display: flex;
+    gap: 11px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.iconCarrito {
+    visibility: hidden;
+    text-align: center;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
+    background: rgba(247, 245, 243, 0.1);
+    border-radius: 200px;
+}
+
+.iconCarrito p {
+    color: white;
+    font-size: 12px;
+}
+
+
+.all-product {
+    width: 776px;
+    height: 55.66px;
+}
+
+.shipping {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 18px;
+}
+
+.product-table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 24px;
+    width: 792px;
+    height: 415.32px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    width: 625px;
+    height: 36px;
+}
+
+.details p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+
+.shipping h3 {
+    margin: 0px;
+    padding: 0px;
+    width: 54px;
+    height: 24px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+input[type="radio"].checkGreen:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 100%;
+    border: 2px solid rgba(42, 91, 69, 1);
+    box-shadow: inset 0 0 0 2px white;
+    text-decoration: none;
+}
+
+input[type="radio"].checkGreen:checked:before {
+    background-color: rgba(42, 91, 69, 1);
+    box-shadow: inset 0 0 0 2px white;
+    text-decoration: none;
+}
+
+.divider {
+    margin: 0px;
+}
+
+.frame-cesta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ==================== Cesta Total ================== */
+
+.cesta-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    width: 384px;
+    height: 280px;
+    background: #F7F5F3;
+}
+
+.details-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: 176px;
+
+}
+
+.details-total .divider {
+    width: 336px;
+}
+
+.carr-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: 18px;
+
+}
+
+.leve {
+    margin: 0px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.total-iva p {
+    margin: 0px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.total-total {
+    border: none;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.total-iva {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 8px;
+    width: 107px;
+    height: 40px;
+}
+
+.button-total {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 310px;
+    height: 40px;
+}
+
+.go-check {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 129px;
+    height: 40px;
+    background: #2A5B45;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.button-total a {
+    text-decoration: none;
+    color: #2A5B45;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+/* ================================== Carrito con productos comprados ========================================= */
+
+.number-contador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 24px;
+    height: 24px;
+    background: rgba(42, 91, 69, 0.1);
+    border-radius: 200px;
+}
+
+.number-contador p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.container-contador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 88px;
+    height: 55.66px;
+}
+
+.imagen-compra {
+    background: rgba(227, 222, 215, 1);
+    width: 55.66px;
+    height: 55.66px;
+}
+
+.all-product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 776px;
+    height: 55.66px;
+    margin: 16px 0px;
+}
+
+.details-coffe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 506.34px;
+    height: 36px;
+}
+
+.details-coffe p {
+    margin: 0px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+
+}
+
+.Costarica span {
+    visibility: hidden;
+}
+
+.CostaricaA span {
+
+    visibility: hidden;
 }

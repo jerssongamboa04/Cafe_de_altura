@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe de Altura</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="cup">
+            <a class="cup" href="/index.html">
+                <h1>cafedealtura.com</h1>
+                <div>
+                    <img src="/asset/cup.png" alt="cup">
+                </div>
+            </a>
+        </div>
+
+        <nav class="navegacion">
+            <a href="/pages/tienda.html">Tienda</a>
+            <a href="">Suscripcion</a>
+            <a href="">Para empresas</a>
+            <a href="">Sobre nosotros</a>
+            <a href="">Contacto</a>
+        </nav>
+
+        <div class="phone">
+            <img src="/asset/phone.png" alt="phone">
+            <p>+34 919 49 05 18</p>
+            <button class="sesion">Iniciar sesión</button>
+        </div>
+
+        <div class="contenedor-icon">
+            <a href="">
+                <img src="/asset/bag.png" alt="logo">
+                <div class="iconCarrito">
+                    <p class="iconCarrito2">0</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- ---------------------Cesta de compra y envio  ----------------------->
+
+    <section class="cesta">
+
+        <h2 id="title-cesta">Cesta</h2>
+
+
+        <div class="frame-cesta">
+
+            <div class="product-table">
+                <h3>Productos</h3>
+
+                <div class="all-newProduct">
+                    <!-- <div class="all-product"> -->
+                    <!-- <div class="container-contador">
+                            <img src="/asset/iconDisminuir.png">
+
+                            <div class="number-contador">
+                                1
+                            </div>
+
+                            <img src="/asset/iconAumentar.png">
+                        </div>
+
+                        <img class="imagen-compra" src="/asset/cafe-colombia2.png" alt="bag coffe">
+
+                        <div class="details-coffe">
+                            <button class="Laos">Colombia Los Naranjos</button>
+                            <p>Paquete de café, 250 gr</p>
+                        </div>
+
+                        <h3>9,00 €</h3> -->
+
+
+                    <!-- </div> -->
+                </div>
+
+                <h3>Seleccionar envío</h3>
+
+                <div class="shipping">
+                    <input class="checkGreen" type="radio" name="envio">
+
+                    <div class="details">
+                        <h4>Envío 5-7 días</h4>
+                        <p>Opción estándar sin seguimiento</p>
+                    </div>
+                    <h3>GRATIS</h3>
+                </div>
+                <img class="divider" src="/asset/Divider.png" alt="divisor">
+
+                <div class="shipping">
+                    <input class="checkGreen" type="radio" name="envio">
+
+                    <div class="details">
+                        <h4>Envío urgente 24h </h4>
+                        <p>Recibe tu pedido en las siguientes 24h (Para pedidos realizados antes de las 13:00).</p>
+                    </div>
+                    <h3>9,00 €</h3>
+                </div>
+
+            </div>
+
+            <!---------------------Cesta Total -------------------------- -->
+
+            <div class="cesta-total">
+
+                <div class="details-total">
+
+                    <h3>Total del carrito</h3>
+                    <img class="divider" src="/asset/Divider.png" alt="divisor">
+
+                    <div class="carr-details">
+                        <p class="leve">SUBTOTAL</p>
+                        <h4>18,00 € </h4>
+                    </div>
+
+                    <div class="carr-details">
+                        <p class="leve">ENVÍO</p>
+                        <h4> GRATIS</h4>
+                    </div>
+
+                    <img class="divider" src="/asset/Divider.png" alt="divisor">
+
+                    <div class="carr-details">
+                        <button class="total-total">TOTAL</button>
+
+                        <div class=" total-iva">
+                            <h4> 18,00 € </h4>
+                            <p>Incluye 3,78€ de IVA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-total">
+                    <button class="go-check">Ir a checkout</button>
+                    <a href="/pages/tienda.html">Seguir comprando</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="union">
+        <h4>Todos los derechos reservados - Café de Altura SL - 2022</h4>
+    </div>
+
+    <script src="cesta.js"></script>
+
+</body>
+
+</html>
