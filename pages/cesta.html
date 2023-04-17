@@ -25,11 +25,11 @@
         </div>
 
         <nav class="navegacion">
-            <a href="/pages/tienda.html">Tienda</a>
-            <a href="">Suscripcion</a>
-            <a href="">Para empresas</a>
-            <a href="">Sobre nosotros</a>
-            <a href="">Contacto</a>
+            <a class="greyHover" href="/pages/tienda.html">Tienda</a>
+            <a class="greyHover" href="">Suscripcion</a>
+            <a class="greyHover" href="">Para empresas</a>
+            <a class="greyHover" href="">Sobre nosotros</a>
+            <a class="greyHover" href="">Contacto</a>
         </nav>
 
         <div class="phone">
@@ -87,7 +87,7 @@
                 <h3>Seleccionar envío</h3>
 
                 <div class="shipping">
-                    <input class="checkGreen" type="radio" name="envio">
+                    <input class="checkGreen" type="radio" name="envio" id="checkGratis" >
 
                     <div class="details">
                         <h4>Envío 5-7 días</h4>
@@ -98,7 +98,7 @@
                 <img class="divider" src="/asset/Divider.png" alt="divisor">
 
                 <div class="shipping">
-                    <input class="checkGreen" type="radio" name="envio">
+                    <input class="checkGreen" type="radio" name="envio" id="checkCobrado" >
 
                     <div class="details">
                         <h4>Envío urgente 24h </h4>
@@ -120,12 +120,12 @@
 
                     <div class="carr-details">
                         <p class="leve">SUBTOTAL</p>
-                        <h4>18,00 € </h4>
+                        <h4 class="priceSubTotal"></h4>
                     </div>
 
                     <div class="carr-details">
                         <p class="leve">ENVÍO</p>
-                        <h4> GRATIS</h4>
+                        <h4 class="envio">GRATIS</h4>
                     </div>
 
                     <img class="divider" src="/asset/Divider.png" alt="divisor">
@@ -134,7 +134,7 @@
                         <button class="total-total">TOTAL</button>
 
                         <div class=" total-iva">
-                            <h4> 18,00 € </h4>
+                            <h4 id="totalCarrito"></h4>
                             <p>Incluye 3,78€ de IVA</p>
                         </div>
                     </div>

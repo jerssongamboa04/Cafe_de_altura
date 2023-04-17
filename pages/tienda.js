@@ -24,7 +24,6 @@ containerProduct.addEventListener('click', e => {
 
     if (quantity1.innerText == 0){
       const divQuantity = document.querySelector('.iconCarrito');
-      console.log(divQuantity);
       divQuantity.style.visibility = 'visible';
     }
     
@@ -54,11 +53,6 @@ containerProduct.addEventListener('click', e => {
       });
 
     }
-
-
-
-
-    console.log(allProduct);
     localStorage.setItem('cafeStorage', JSON.stringify(allProduct));
 
   }

@@ -4,17 +4,13 @@
 // creo un evento al boton origenes que me dirija a la tienda
 
 const origenes = document.querySelector('.source');
-// console.log(origenes);
 
 origenes.addEventListener('click', function () {
     window.location.href = "pages/tienda.html";
 })
 
-
 // creo un evento al boton comprarCafe que me dirija a la cesta
-
 const comprarCafe = document.querySelector('.purchase')
-// console.log(comprarCafe);
 
 comprarCafe.addEventListener('click', function () {
     window.location.href = "pages/cesta.html";
@@ -25,7 +21,6 @@ comprarCafe.addEventListener('click', function () {
 
 //  agrego un evento a la img row para que me dirija a la tienda
 const rowTienda = document.querySelector('.see')
-// console.log(rowTienda);
 
 rowTienda.addEventListener('click', function () {
     window.location.href = "pages/tienda.html";
@@ -48,7 +43,7 @@ container.addEventListener('click', e => {
     if (e.target.classList.contains('iconAbove')) {
         const parent = e.target.parentElement.parentElement;
         const text2 = parent.querySelector('p');
-        const selection = e.target.parentElement.parentElement;
+        // const selection = e.target.parentElement.parentElement;
         const icon = e.target.parentElement.querySelector('img');
 
         if (text2.style.display !== "block") {
@@ -63,7 +58,6 @@ container.addEventListener('click', e => {
 
 //  agrego un evento a la img row para que me dirija al formulario de contacto
 const resolvemos = document.querySelector('.doubt')
-// console.log(resolvemos);
 
 resolvemos.addEventListener('click', function () {
     window.location.href = "#sectionsix";

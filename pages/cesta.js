@@ -4,7 +4,6 @@
 const allProductShow = document.querySelector('.all-newProduct');
 
 const cafeStorage = JSON.parse(localStorage.getItem('cafeStorage')) || [];
-console.log(cafeStorage);
 
 //===== Funcionalidad de agregar productos al carrito ============
 
@@ -23,34 +22,39 @@ function actualizarCarrito() {
     // ===============Creo los elementos del contador=================
 
     // funcionalidad de disminuir con el boton - 
+
     const imgIconDisminuir = document.createElement('img');
     imgIconDisminuir.classList.add('btn-disminuir');
     imgIconDisminuir.src = '/asset/iconDisminuir.png';
 
-    imgIconDisminuir.addEventListener('click', function () {
+    function disminuirProducto() {
+      imgIconDisminuir.addEventListener('click', function () {
+        if (product.cantidad !== 0) {
+          product.cantidad--;
+          containerQuantity.innerHTML = product.cantidad;
+          let multiplicante = product.priceBuys;
+          let multiplicador2 = multiplicante.substring(0, 4);
+          priceCoffeStorage.innerHTML = (product.cantidad * Number(multiplicador2.replace(',', '.'))).toFixed(2).replace('.', ',') + ' €';
+          actualizartitle();
+          addCheckboxEvents();
+          actualizarPrice();
+          actualizarLocalStorage();
+        }
 
-      if (product.cantidad !== 0) {
-        product.cantidad--;
-        containerQuantity.innerHTML = product.cantidad;
-        let multiplicante = product.priceBuys;
-        let multiplicador2 = multiplicante.substring(0, 4);
-        priceCoffeStorage.innerHTML = (product.cantidad * Number(multiplicador2.replace(',', '.'))).toFixed(2).replace('.', ',') + ' €';
-        actualizartitle();
-        actualizarLocalStorage();
+        if (product.cantidad == 0) {
+          const index = cafeStorage.findIndex(item => item.id === product.id);
+          cafeStorage.splice(index, 1);
+          contenedorNuevoProduct.remove();
+          divisory.remove();
+          actualizartitle();
+          actualizarPrice();
+          addCheckboxEvents();
+          actualizarLocalStorage();
+        }
 
-      }
-
-      if (product.cantidad == 0) {
-        const index = cafeStorage.findIndex(item => item.id === product.id);
-        cafeStorage.splice(index, 1);
-        contenedorNuevoProduct.remove();
-        divisory.remove();
-        actualizartitle();
-        actualizarLocalStorage();
-      }
-
-    });
-
+      });
+    }
+    disminuirProducto();
     const containerQuantity = document.createElement('div');
     containerQuantity.innerHTML = product.cantidad;
     containerQuantity.classList.add('number-contador');
@@ -59,22 +63,28 @@ function actualizarCarrito() {
     const imgIconAumentar = document.createElement('img');
     imgIconAumentar.src = '/asset/iconAumentar.png';
 
-    imgIconAumentar.addEventListener('click', function () {
+    function aumentarProduct() {
+      imgIconAumentar.addEventListener('click', function () {
 
-      if (product.cantidad > 0) {
-        product.cantidad++;
-        containerQuantity.innerHTML = product.cantidad;
-      }
+        if (product.cantidad > 0) {
+          product.cantidad++;
+          containerQuantity.innerHTML = product.cantidad;
+          actualizarPrice();
+          addCheckboxEvents()
+        }
 
-      if (product.cantidad > 0) {
-        let multiplicante = product.priceBuys;
-        let multiplicador2 = multiplicante.substring(0, 4);
-        priceCoffeStorage.innerHTML = (product.cantidad * Number(multiplicador2.replace(',', '.'))).toFixed(2).replace('.', ',') + ' €';
-      };
-      actualizartitle();
-      actualizarLocalStorage();
-
-    })
+        if (product.cantidad > 0) {
+          let multiplicante = product.priceBuys;
+          let multiplicador2 = multiplicante.substring(0, 4);
+          priceCoffeStorage.innerHTML = (product.cantidad * Number(multiplicador2.replace(',', '.'))).toFixed(2).replace('.', ',') + ' €';
+        };
+        actualizarPrice();
+        actualizarLocalStorage();
+        actualizartitle();
+        addCheckboxEvents()
+      })
+    }
+    aumentarProduct();
 
     // Creo el contenedor del contador y lo agrego los elementos
     const containerContador = document.createElement('div');
@@ -120,12 +130,32 @@ function actualizarCarrito() {
 
     allProductShow.appendChild(contenedorNuevoProduct);
     allProductShow.appendChild(divisory);
-
   });
-
 }
 
+// ======== Creamos una funcion =======================
+// que me actualice el precio sub total=================
 
+function actualizarPrice() {
+  let sumaSub = 0;
+  for (let i = 0; i < cafeStorage.length; i++) {
+    const product = cafeStorage[i];
+    const price = parseFloat(product.priceBuys);
+    const quantity = product.cantidad;
+    const totalPrice = price * quantity;
+    sumaSub += totalPrice;
+  }
+  const subTotalShow = document.querySelector('.priceSubTotal');
+  subTotalShow.innerHTML = sumaSub.toFixed(2).replace('.', ',') + ' €';
+
+  addCheckboxEvents()
+  actualizarCarrito();
+  actualizarLocalStorage();
+
+  localStorage.setItem('totalCarrito', sumaSub.toFixed(2).replace('.', ',') + ' €');
+}
+
+// ========= creamos una funcion para actualizar el titulo ============
 function actualizartitle() {
   let sumaTotal = 0;
   for (let i = 0; i < cafeStorage.length; i++) {
@@ -144,7 +174,64 @@ function actualizartitle() {
   const divQuantity = document.querySelector('.iconCarrito');
   divQuantity.style.background = 'background: rgba(247, 245, 243, 0.1)';
   divQuantity.style.visibility = 'visible';
-  
+
+  localStorage.setItem('title', JSON.stringify(sumaTotal));
+
+}
+// ============ Creamos una funcion que me sume ==============
+//  =========== el subtotal con el tipo de envio ============== 
+
+const btnEnvioUrgente = document.querySelector('.product-table');
+const checkBox2 = document.querySelector('#checkCobrado');
+const checkBox1 = document.querySelector('#checkGratis')
+const envio = document.querySelector('.envio');
+const priceMostrado = document.querySelector('.priceSubTotal');
+const envioCobro = 9;
+const totalCarrito = document.querySelector('#totalCarrito');
+const subLocal = localStorage.getItem('totalCarrito');
+totalCarrito.innerHTML = subLocal;
+
+function addCheckboxEvents() {
+
+
+  checkBox1.addEventListener('change', function () {
+    if (this.checked) {
+      envio.innerHTML = 'GRATIS';
+      const subLocal = localStorage.getItem('totalCarrito');
+      totalCarrito.innerHTML = subLocal;
+      actualizarPrice();
+      actualizarCarrito();
+      actualizarLocalStorage();
+    }
+   
+  });
+
+  checkBox2.addEventListener('change', function () {
+    if (this.checked) {
+      const subLocal = localStorage.getItem('totalCarrito');
+      totalCarrito.innerHTML = subLocal + ' €';
+      envio.innerHTML = envioCobro.toFixed(2).replace('.', ',') + '€';
+      actualizarPrice();
+      actualizarCarrito();
+      actualizarLocalStorage();
+    }
+  });
+
+
+  // Función para actualizar el total
+  function actualizarTotal() {
+    if (checkBox1.checked) {
+      const subLocal = localStorage.getItem('totalCarrito');
+      totalCarrito.innerHTML = subLocal;
+    } else if (checkBox2.checked) {
+      const subLocal = localStorage.getItem('totalCarrito');
+      totalCarrito.innerHTML = (parseFloat(subLocal) + envioCobro).toFixed(2).replace('.', ',') + ' €';
+    }
+  }
+
+
+  // Actualizar el total al cargar la página
+  actualizarTotal();
 }
 
 // Actualizo el carrito cuando cambian los datos en el almacenamiento local
@@ -154,6 +241,9 @@ window.addEventListener('storage', function (e) {
 });
 
 // Llamo a la función actualizarCarrito para que muestre los productos en la página
+
+addCheckboxEvents();
+actualizarPrice();
 actualizartitle();
 actualizarCarrito();
 actualizarLocalStorage();
